@@ -1,1 +1,1 @@
-print("hoy es jueves")
+print("hoy es juevesdss")
