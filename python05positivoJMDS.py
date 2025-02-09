@@ -1,9 +1,8 @@
 print("Positivo o negativo")
 print ("Introduzca un número")
-numero = input()
-input = 18
-#Preguntamos siu es mayor de edad
-if (numero >=0):
+numero = int(input())
+#Preguntamos si número es mayor de 0
+if (numero >= 0):
     #dentro del if
     print("Es numero positivo")
 else:

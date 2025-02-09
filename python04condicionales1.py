@@ -1,5 +1,5 @@
 print("Ejemplo condicionales")
-edad = 18
+edad = 8
 #Preguntamos siu es mayor de edad
 if (edad >=18):
     #dentro del if
