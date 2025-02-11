@@ -1,16 +1,17 @@
 print("Calcular salario trabajadores")
 print("Introduzca el numero de horas trabajadas: ")
 horastrabajadas = int(input())
-print("Introduzca el precio hora base: ")
-preciohorabase = int(input())
-print("Introduzca el precio hora extra: ")
-preciohoraextra = int(input())
-print("Introduzca los kilómetros recorridos: ")
+print("Introduzca el precio hora: ")
+preciohora = int(input())
+print("Introduzca los kilometros recorridos: ")
 kmsrecorridos = int(input())
+salariobase = 0
 #Calculo salario
-if (horastrabajadas <= 36):
-    salariobase = (preciohorabase * horastrabajadas)
-elif (horastrabajadas > 36):
-    salarioextra = (preciohoraextra * horastrabajadas)
+if (horastrabajadas > 36):
+    salarioextra = ((preciohora +2) * (horastrabajadas-36))
+    salariobase = 36 * preciohora
+else:
+    salarioextra=0
+    salariobase = horastrabajadas * preciohora
 salariototal = salariobase + salarioextra
-print("El salario tiotal es: ", salariototal)
+print("El salario total es: ", salariototal)
