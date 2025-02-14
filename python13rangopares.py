@@ -1,7 +1,7 @@
 print("Rango de números pares")
-print("Introduzca un inicio:")
+print("Introduzca un número de inicio:")
 inicio = int(input())
-print("Introduzca un fin:")
+print("Introduzca un número de finalización:")
 fin = int(input())
 for i in range (inicio, fin, +1):
     #preguntamos si ekl numero es par

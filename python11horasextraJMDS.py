@@ -12,29 +12,30 @@ if (horastrabajadas > 36):
     salariobase = preciohora * 36
 else:
     salarioextra=0
+    horasextra=0
     salariobase = horastrabajadas * preciohora
 salariototal = salariobase + salarioextra
-horasextra = horastrabajadas - 36
 if (km <= 100):
     dietas = "LOCALES"
 elif (km >= 101 and km <=500):
     dietas = "PROVINCIALES"
 else:
-    dietas = nacionales
+    dietas = "NACIONALES"
 if (salariototal < 250):
     retencion = "SIN RETENCION"
 elif (salariototal >= 250 and salariototal <= 600):
-    retencion = "20% Retencion"
+    retencion = "20% de retención"
 else:
-    retencion = "40% Retención"
+    retencion = "40% de retención"
 #INFORME
 print("Informe salario ")
-print("Horas trabajadas ", horastrabajadas)
-print("Horas extra ", horasextra)
+print("Horas trabajadas: ", horastrabajadas)
+print("Horas extra: ", horasextra)
 print("Precio hora: ", preciohora)
-print("Precio extra ", (preciohora + 2))
-print("Salario base ", salariobase)
-print("Salario extra ", salarioextra)
+print("Precio extra: ", (preciohora + 2))
+print("Salario base: ", salariobase)
+print("Salario extra: ", salarioextra)
 print("Salario total ", salariototal)
-print("Retenciones ", retencion)
-print("Dietas ", dietas)
+print("Retenciones: ", retencion)
+print("Dietas: ", dietas)
+print("Fin de programa.")

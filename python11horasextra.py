@@ -28,7 +28,7 @@ if (km <= 100):
 elif (km >= 101 and km <=500):
     dietas = "PROVINCIALES"
 else:
-    dietas = nacionales
+    dietas = "Nacionales"
 if (salariototal < 250):
     retencion = "SIN RETENCION"
 elif (salariototal >= 250 and salariototal <= 600):
