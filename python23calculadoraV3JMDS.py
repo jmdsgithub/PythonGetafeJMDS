@@ -16,7 +16,7 @@ def mostrarMenu():
     print("Seleccione una opción")
 
 #--------------------------------
-print("Calculadora metodos")
+print("Calculadora")
 print("Introduzca numero 1")
 #almacenar lo que ha escrito el usuario
 #en una variable string
@@ -26,7 +26,7 @@ numero2 = int(input())
 #asignamos un  valor en el bloque para entrar en el bucle
 opcion = 1
 #creamos un while hasta que el usuario escriba 0
-while (opcion !=0 and isdigit(option)):
+while ((opcion !=0)):
     mostrarMenu()
     opcion = int(input())
     operacion = 0
